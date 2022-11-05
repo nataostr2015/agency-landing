@@ -171,7 +171,7 @@
 
 .intro-video {
     max-width: 551px;
-    height: 356pxt;
+    height: 356px;
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29);
 }
@@ -297,10 +297,9 @@
     font-weight: 700;
     line-height: 34px;
     border: 2px solid #ff2d2d;
-    background-color: rgba (0, 0, 0, 0.0001);
+    background-color: rgba(0, 0, 0, 0.0001);
     text-decoration: none;    
-    background-color: rgba (0, 0, 0, 0.0001);    
-}
+    }
 
 /* Features */
 
@@ -321,7 +320,7 @@
     font-family: 'Open Sans';
     font-size: 42px;
     line-height: 1.2;
-    letter-spacing: 0.3834;
+    letter-spacing: 0.4px;
     text-align: center;
     text-transform: uppercase;
     color: #000;
@@ -362,11 +361,11 @@
 }
 
 .filter__link {
-    font-weight: Open Sans;
+    font-family: Open Sans;
     font-size: 22px;
     font-weight: 600;
     line-height: 24px;
-    list-style: 0.22px;
+    list-style: none;
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
