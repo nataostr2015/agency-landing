@@ -48,11 +48,16 @@ button {
     font-size: 16px;
 }
 
+.container {
+    max-width: 1579px;
+    margin: auto;
+}
+
 /* Header */
+
 
 .header-wrapper {
     padding-top: 29px;
-    max-width: 1579px;
     margin: auto;
     background-color: #f6f2f2;
     
@@ -107,10 +112,10 @@ button {
     background-color: #FF3F40;
 }
 
-.container {
-    max-width: 1579px;
-    margin: auto;
-}
+/* Main */
+/* Intro */
+
+
 
 .intro-wrapper {
     display: block;
@@ -630,4 +635,162 @@ button {
         background-color: #ff2d2d;
     }
 
+    /* registration */
+
+    .feedback {
+        max-width: 1249px;
+        margin: auto;
+        }
+
+    .feedback {
+        margin-bottom: 67px;
+    }
+
+    .feedback__header {
+        margin-bottom: 70px;
+    }
+        
+    .feedback__heading {
+        font-family: Open Sans;
+        font-size: 42px;
+        font-weight: 700;
+        width: 329px;
+        height: 32px;
+        text-transform: uppercase;
+        }
+        
+    .feedback__about {
+        font-family: Open Sans;
+        font-size: 16px;
+        width: 753px;
+        line-height: 28px;
+        margin-bottom: 39px;
+        
+        }
+        
+    .feedback__body {
+        
+        }
+
+    .feedback__form {
+
+    }
+
+    .feedback__form > input::placeholder,
+    .feedback__form > textarea::placeholder {
+        color:#000;
+        font-family: Open Sans;
+        font-size: 16px;
+    }
+        
+    .feedback__name {
+        box-sizing: border-box;
+        width: 339px;
+        height: 69px;
+        background-color: rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 5px;
+        padding-left: 54px;
+        margin-right: 24px;
+        margin-bottom: 44px;
+        color:#000;
+        font-family: Open Sans;
+        font-size: 16px;
+        }
+
+                
+    .feedback__email {
+        box-sizing: border-box;
+        width: 339px;
+        height: 69px;
+        background-color: rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 5px;
+        padding-left: 48px;
+        margin-left: 24px;
+        margin-bottom: 44px;
+        color:#000;
+        font-family: Open Sans;
+        font-size: 16px;
+        }
+
+    .feedback__textarea {
+        box-sizing: border-box;
+        resize: none;
+        width: 731px;
+        height: 239px;
+        padding: 31px 51px;
+        border: 0;
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 5px;
+        color:#000
+        font-family: Open Sans;
+        font-size: 16px;
+    }              
+        
+        
+    .feedback__button {
+        display: flex;
+        width: 728px;
+        height: 72px;
+        border-radius: 5px;
+        background-color: #FF3B3B;
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 34px;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;        
+        }
+
+    .feedback__contacts {
+        color: #fff;
+        background-color: rgba(45, 45, 45, 1);        
+    }
+
+    .contacts {
+        width: 315px;
+        padding: 141px 17px 141px 81px;
+        
+    }
+
+    .contacts__heading {
+        text-transform: uppercase;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .contacts__address {
+        font-family: Open Sans;
+        font-size: 18px;
+        margin: 0;
+       }
+
+    .contacts__email {
+        display: block;
+        color: #fff;
+        font-family: Open Sans;
+        margin: 0;
+        margin-top: 27px;
+        margin-bottom: 20px;
+    }
+
+    .contacts__tel {
+        display: block;
+        color: #fff;
+        font-family: Open Sans;
+        margin: 0;
+        margin-bottom: 20px;
+
+
+    }
+
     
+        
+        
