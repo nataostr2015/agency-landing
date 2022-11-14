@@ -48,20 +48,29 @@ button {
     font-size: 16px;
 }
 
-.container {
-    max-width: 1579px;
-    margin: auto;
+.page__inner {
+    display: block;
+    width: 100%;
+}
+
+.page__inner_intro {
+    padding-top: 29px;
+}
+
+.page__inner_grey {
+    background-color: #F6F2F2;
+}
+
+.page__inner_dark {
+    background-color: #2C2C2C;
+}
+
+.page__header {
+    margin: 0 auto;
 }
 
 /* Header */
 
-
-.header-wrapper {
-    padding-top: 29px;
-    margin: auto;
-    background-color: #f6f2f2;
-    
-}
 
 .header {
     display: flex;
@@ -76,7 +85,7 @@ button {
     margin-right: 30px;
 }
 
-.menu-list {
+.site-menu__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -84,12 +93,19 @@ button {
     list-style: none;
 }
 
-.menu-list > li {
+.site-menu__item {
     display: flex;
     min-height: 89px;
 }
 
-.menu-link {
+@media screen and (max-width: 600px) {
+    .site-menu__list {
+        justify-content: center;
+    }
+}
+
+
+.site-menu__link {
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -104,11 +120,11 @@ button {
     color: #E0E0E0;
 }
 
-.menu-link:hover {
+.site-menu__link:hover {
     background-color:  #FF3F40;;
 }
 
-.active-link {
+.site-menu__link_active {
     background-color: #FF3F40;
 }
 
@@ -132,27 +148,32 @@ button {
     justify-content: space-between;
     }
 
-.intro-info {
-    max-width: 595px;    
+
+
+.intro__info {
+    max-width: 595px;
+    margin-right: 2vw;   
     }
 
-.intro-heading {
+.intro__heading {
     font-family: 'Open Sans';
     font-size: 60px;
-    line-height: 72px;
+    line-height: 1.2;
     font-weight: 800;
     letter-spacing: 1.5px;
+    word-break: break-all;
+    hyphens: auto;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 19px;
     margin-top: -15px;
 }
 
-.intro-special {
+.intro__heading_special {
     letter-spacing: 6px;
 }
 
-.intro-text {
+.intro__about {
     max-width: 545px;
     text-align: justify;
     font-family: 'Open Sans';
@@ -643,11 +664,13 @@ button {
         }
 
     .feedback {
+        max-width: 1249px;
         margin-bottom: 67px;
     }
 
     .feedback__header {
-        margin-bottom: 70px;
+        max-width: 752px;
+        margin-bottom: 77px;
     }
         
     .feedback__heading {
@@ -663,16 +686,25 @@ button {
         font-family: Open Sans;
         font-size: 16px;
         width: 753px;
-        line-height: 28px;
-        margin-bottom: 39px;
+        line-height: 1.75;
+        margin: 0;
+        margin-bottom: 50px;
         
         }
         
     .feedback__body {
-        
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin-bottom: 110px;       
         }
 
     .feedback__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 731px;
+
 
     }
 
@@ -719,11 +751,12 @@ button {
         resize: none;
         width: 731px;
         height: 239px;
+        margin-bottom: 45px;
         padding: 31px 51px;
         border: 0;
         background-color: rgba(0,0,0,0.1);
         border-radius: 5px;
-        color:#000
+        color:#000;
         font-family: Open Sans;
         font-size: 16px;
     }              
@@ -751,7 +784,7 @@ button {
     }
 
     .contacts {
-        width: 315px;
+        max-width: 315px;
         padding: 141px 17px 141px 81px;
         
     }
@@ -761,6 +794,7 @@ button {
         font-family: Open Sans;
         font-size: 18px;
         font-weight: 700;
+        line-height: 1.75;
         margin: 0;
         margin-bottom: 30px;
         color: #fff;
@@ -790,6 +824,41 @@ button {
 
 
     }
+
+    /* footer */
+
+    .page__inner_dark-2 {
+        background: #313030;
+    }
+
+    .footer {
+        display: flex;
+        max-width: 1249px;
+        min-height: 111px;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        display: block;
+        width: 376px;
+        height: 26px;
+        margin: 0;
+        line-height: 26px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        color: #B8B8B8;
+    }
+
+    .social {
+        display: flex;
+        gap: 18px;
+    }
+
+
 
     
         
