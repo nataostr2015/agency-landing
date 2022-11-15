@@ -650,7 +650,7 @@ button {
         align-items: center;
         text-transform: uppercase;
         width: 214px;
-        height: 79px;
+        min-height: 79px;
         margin-left: 22px;
         border: none;
         border-radius: 5px;
@@ -761,7 +761,8 @@ button {
     .feedback__textarea {
         box-sizing: border-box;
         resize: none;
-        width: 731px;
+        width: 100%;
+        max-width: 731px;
         height: 239px;
         margin-bottom: 45px;
         padding: 31px 51px;
@@ -776,7 +777,8 @@ button {
         
     .feedback__button {
         display: flex;
-        width: 728px;
+        max-width: 728px;
+        width: 100%;
         height: 72px;
         border-radius: 5px;
         background-color: #FF3B3B;
@@ -851,8 +853,8 @@ button {
 
     .footer {
         display: flex;
+        width: 100%;
         max-width: 1249px;
-        min-width: 350px;
         min-height: 111px;
         justify-content: space-between;
         margin: 0 auto;
@@ -873,6 +875,7 @@ button {
 
     .social {
         display: flex;
+        flex-wrap: wrap;
         gap: 18px;
     }
 
