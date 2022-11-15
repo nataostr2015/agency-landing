@@ -609,6 +609,7 @@ button {
         font-size: 42px;
         font-weight: 700;
         line-height: 1.2;
+        max-width: 1129px;
         margin: 0;
         margin-bottom: 17px;
     }
@@ -659,25 +660,27 @@ button {
     /* registration */
 
     .feedback {
-        max-width: 1249px;
-        margin: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 104px 0 107px
+        margin-bottom: 67px;
         }
 
-    .feedback {
+    .feedback__header {
         max-width: 1249px;
-        margin-bottom: 67px;
+        margin: 0 auto;
+        margin-bottom: 77px;
     }
 
-    .feedback__header {
+    .feedback__inner {
         max-width: 752px;
-        margin-bottom: 77px;
     }
         
     .feedback__heading {
         font-family: Open Sans;
         font-size: 42px;
         font-weight: 700;
-        width: 329px;
+        max-width: 329px;
         height: 32px;
         text-transform: uppercase;
         }
@@ -685,27 +688,36 @@ button {
     .feedback__about {
         font-family: Open Sans;
         font-size: 16px;
-        width: 753px;
+        max-width: 753px;
         line-height: 1.75;
         margin: 0;
-        margin-bottom: 50px;
-        
+        margin-bottom: 50px;        
         }
         
     .feedback__body {
         display: flex;
         flex-wrap: wrap; 
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-bottom: 110px;       
         }
+
+    .feedback__body::before {
+        content: '';
+        flex: 1 1 auto;
+    }
+
+    .feedback__body::after {
+        content: '';
+        flex: 1 1 auto;
+        background-color: #2d2d2d;        
+    }    
 
     .feedback__form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 731px;
-
-
+        margin-right: 107px;
     }
 
     .feedback__form > input::placeholder,
@@ -780,7 +792,7 @@ button {
 
     .feedback__contacts {
         color: #fff;
-        background-color: rgba(45, 45, 45, 1);        
+        background-color: #2D2D2D;        
     }
 
     .contacts {
@@ -790,29 +802,35 @@ button {
     }
 
     .contacts__heading {
+        max-width: 180px;
         text-transform: uppercase;
         font-family: Open Sans;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.75;
+        word-break: break-all;
         margin: 0;
         margin-bottom: 30px;
         color: #fff;
     }
 
     .contacts__address {
+        max-width: 315px;
         font-family: Open Sans;
         font-size: 18px;
         margin: 0;
+        word-break: break-all;
        }
 
     .contacts__email {
+        max-width: 221px;
         display: block;
         color: #fff;
         font-family: Open Sans;
         margin: 0;
         margin-top: 27px;
         margin-bottom: 20px;
+        word-break: break-all;
     }
 
     .contacts__tel {
@@ -834,6 +852,7 @@ button {
     .footer {
         display: flex;
         max-width: 1249px;
+        min-width: 350px;
         min-height: 111px;
         justify-content: space-between;
         margin: 0 auto;
@@ -842,8 +861,7 @@ button {
 
     .footer__copyright {
         display: block;
-        width: 376px;
-        height: 26px;
+        max-width: 376px;
         margin: 0;
         line-height: 26px;
         font-family: Open Sans;
