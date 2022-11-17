@@ -703,7 +703,6 @@ button {
         width: 100%;
         min-width: 350px;
         margin: 0 auto;
-        padding: 104px 0 107px
         margin-bottom: 67px;
         }
 
@@ -749,7 +748,7 @@ button {
     .feedback__body {
         display: flex;
         flex-wrap: wrap; 
-        /* justify-content: space-between; */
+        justify-content: space-between;
         margin-bottom: 110px;       
         }
 
@@ -851,7 +850,7 @@ button {
 
     .contacts {
         max-width: 315px;
-        padding: 141px 17px 141px 81px;
+        padding: 124px 17px 124px 81px;
         
     }
 
@@ -874,6 +873,7 @@ button {
         font-size: 16px;
         line-height: 28px;
         margin: 0;
+        margin-bottom: 27px;
         }
 
     .contacts__email {
@@ -883,8 +883,7 @@ button {
         font-family: Open Sans;
         font-size: 16px;
         line-height: 28px;
-        margin: 0;
-        margin-top: 27px;
+        margin: 0;        
         margin-bottom: 20px;
         word-break: break-all;
     }
@@ -896,9 +895,6 @@ button {
         font-size: 16px;
         line-height: 28px;
         margin: 0;
-        margin-bottom: 20px;
-
-
     }
 
     /* footer */
