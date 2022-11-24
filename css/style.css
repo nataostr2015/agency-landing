@@ -296,7 +296,7 @@ button {
     padding: 0.5em 1em;
     box-sizing: border-box;
     height: 55px;
-    color: #f6f2f2;
+    color: #FFF;
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 700;
@@ -306,7 +306,6 @@ button {
 }
 
 .action-link__red {
-    color: #f6f2f2;
     background-color: #FF3F40;
 }
 
@@ -340,17 +339,20 @@ button {
     width: 539px;
 }
 
-.services__heading {
+.section-heading {
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 700;    
+    text-transform: uppercase;
+}
+
+.section-heading__services {
     margin: 0;
     margin-top: 95px;
     margin-bottom: 44px;
-    font-family: 'Open Sans';
-    font-size: 42px;
-    font-weight: 700;
     line-height: 55px;
-    letter-spacing: 0.422159px;
-    text-transform: uppercase;
-}
+    letter-spacing: 0.4px;
+   }
 
 .services__about {
     font-family: 'Open Sans';
@@ -462,15 +464,12 @@ button {
     border: none;
 }
 
-.feature__heading {
+.section-heading__feature {
     margin: 0;
     margin-bottom: 28.5px;
-    font-family: 'Open Sans';
-    font-size: 42px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     text-align: center;
-    text-transform: uppercase;
     color: #000;
 }
 
@@ -564,16 +563,12 @@ button {
     border: none;
 }
 
-.team__heading {
-    font-family: 'Open Sans';
-    font-size: 42px;
-    font-weight: 700;
+.section-heading__team {
     max-width: 374px;
     min-height: 32px;
     margin: 0;
     margin-bottom: 35px;
-    text-transform: uppercase;
-}
+   }
 
 .team__about {
     font-family: 'Open Sans';
@@ -849,13 +844,10 @@ button {
     max-width: 753px;
 }
 
-.feedback__heading {
-    font-family: Open Sans;
-    font-size: 42px;
-    font-weight: 700;
+
+.section-heading__feedback {
     max-width: 329px;
     height: 32px;
-    text-transform: uppercase;
     margin-bottom: 45px;
 }
 
@@ -951,22 +943,14 @@ button {
 }
 
 
-.feedback__button {
-    display: flex;
+.action-link__long {    
     max-width: 728px;
     width: 100%;
     height: 72px;
-    border: none;
-    border-radius: 5px;
+    border: none;    
     background-color: #FF3B3B;
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 34px;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
+    color: #FFF;   
+    text-transform: uppercase;   
 }
 
 .feedback__contacts {
