@@ -161,22 +161,23 @@ button {
     background-color: #FF3F40;
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .site-menu {
     display: none;
-}
-} */
+    }
+} 
 /* popup-menu */
-/* .popup-menu {
+
+.popup-menu {
     position: relative;
     
 }
 
 .popup-menu__button {
     display: block;
-    width: 300px;
-    height: 80px;
-    background-image: url('../img/menu-icon.svg');
+    width: 100px;
+    height: 89px;
+    background-image: url('../img/menu-image.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -230,11 +231,7 @@ button {
     .popup-menu {
         display: none;
     }
-
-
-} */
-    
-
+} 
 
 /* Main */
 /* Intro */
