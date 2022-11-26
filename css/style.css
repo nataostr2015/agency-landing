@@ -73,6 +73,7 @@ button {
 /* page */
 
 .page {
+    min-width: 350px;
     font-family: 'Open sans';
     font-style: normal;
     font-weight: 400;
@@ -313,9 +314,10 @@ button {
     padding-top: 15px;
 }
 
-.intro-video {
+.intro-video {    
     max-width: 551px;
-    height: 356px;
+    width: 100%;
+    min-height: 356px;
     object-fit: cover;
     box-shadow: -2px -14px 73px rgba(0, 0, 0, 0.29);
 }
@@ -820,20 +822,21 @@ button {
     min-width: 350px;
     margin: 0 auto;
     margin-bottom: 67px;
-    padding: 0 1vw;
+    padding-left: 1vw;
     box-sizing: border-box;
 }
 
 .feedback__header {
     max-width: 1249px;
     margin: 0 auto;
-    margin-bottom: 77px;
+    margin-bottom: 77px;    
 }
 
 .feedback__header::after {
     display: block;
     content: '';
     margin: 0;
+    padding: 0 1vw;
     width: 130px;
     height: 2px;
     background-color: #ff2d2d;
@@ -865,7 +868,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 110px;
-}
+    }
 
 .feedback__body::before {
     content: '';
@@ -876,6 +879,7 @@ button {
     content: '';
     flex: 1 1 auto;
     background-color: #2d2d2d;
+    padding-right: 1vw;
 }
 
 .feedback__form {
@@ -1021,7 +1025,7 @@ button {
 .footer {
     display: flex;
     width: 100%;
-    max-width: 1249px;
+    max-width: 1583px;
     min-width: 350px;
     min-height: 111px;
     justify-content: space-between;
