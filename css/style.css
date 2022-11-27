@@ -373,7 +373,7 @@ button {
     gap: 89px;
     justify-content: space-between;
     padding: 0 1vw;
-    padding-bottom: 113px;
+    padding-bottom: 99px;
     border-bottom: 2px solid #ececec;
 }
 
@@ -541,7 +541,7 @@ button {
     gap: 57px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
     .filter__list {
         justify-content: center;
     }
@@ -572,6 +572,12 @@ button {
     gap: 20px;
 }
 
+@media screen and (max-width: 1300px) {
+    .feature__products {
+        justify-content: center;
+    }
+}
+
 .feature__product {
     height: 297px;
     object-fit: cover;
@@ -592,7 +598,7 @@ button {
 }
 
 .team__header {
-    margin-bottom: 67px;
+    margin-bottom: 67px;    
 }
 
 .team__header::after {
@@ -644,8 +650,6 @@ button {
         display: contents;
     }
 }
-
-
 
 .team__lead-main {
     max-width: 631px;
@@ -750,12 +754,25 @@ button {
     display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
     .team__members {
         grid-template-columns: auto;
         grid-template-rows: auto;
+        justify-content: center;
         justify-items: center;
         row-gap: 1em;
+    }
+
+    .section-heading__team {
+        margin: auto;
+    }
+
+    .team__about {
+        margin: auto;
+    }
+
+    .team__header::after {
+        margin: auto;
     }
 
     .team__lead-photo {
@@ -764,7 +781,11 @@ button {
 
     .team__lead-main {
         grid-column: 1 / 2;
-        grid-row: auto;
+        grid-row: 2 / 3;                  
+    }
+
+    .team__lead-name {
+        margin: auto;
     }
 
     .team__others {
@@ -773,6 +794,7 @@ button {
         grid-row: auto;
     }
 }
+
 
 /* subscribe */
 
@@ -806,6 +828,8 @@ button {
     margin-bottom: 17px;
 }
 
+
+
 .subscribe__about {
     color: #fff;
     font-family: Open Sans;
@@ -818,6 +842,13 @@ button {
 .subscribe__form {
     display: flex;
     flex-wrap: wrap;
+    gap: 22px;
+}
+
+@media screen and (max-width: 1300px) {
+    .subscribe__heading {
+        max-width: 70%;
+    }    
 }
 
 .subscribe__input {
@@ -825,17 +856,13 @@ button {
     font-size: 16px;
     width: 521px;
     height: 79px;
+    border: none;
     border-radius: 5px;
     background-color: #fff;
     padding: 0 36px;
 }
 
-@media screen and (max-width: 530px) {
-    .subscribe__input {
 
-        width: 100%;
-    }
-}
 
 .subscribe__button {
     color: #fff;
@@ -849,11 +876,27 @@ button {
     text-transform: uppercase;
     width: 214px;
     min-height: 79px;
-    margin-left: 22px;
     border: none;
     border-radius: 5px;
     background-color: #ff2d2d;
 }
+
+@media screen and (max-width: 900px) {
+    .subscribe__input {
+        width: 100%;
+        margin: auto; 
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+    }
+    .subscribe__button {
+        margin: auto;
+        margin-bottom: 10px;       
+    }
+}
+
+
 
 /* registration */
 
@@ -930,6 +973,16 @@ button {
     margin-right: 107px;
 }
 
+@media screen and (max-width: 1300px) {
+        .action-link__long {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
 .feedback__form>input::placeholder,
 .feedback__form>textarea::placeholder {
     color: #000;
@@ -978,13 +1031,28 @@ button {
     min-height: 239px;
     margin-bottom: 45px;
     padding: 31px 51px;
-    border: 0;
+    border: none;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #000;
     font-family: Open Sans;
     font-size: 16px;
 }
+
+@media screen and (max-width: 900px) {
+    .feedback__form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .feedback__name {
+        margin-left: 0;
+        }
+
+    .feedback__email {        
+        margin-left: 0;
+        }
+    }
 
 
 .action-link__long {    
