@@ -189,9 +189,10 @@ button {
 } 
 /* popup-menu */
 
-.popup-menu {
-    position: relative;
-    
+.popup-menu {    
+    padding: 0;
+    width: 100%;
+    justify-content: center;    
 }
 
 .popup-menu__button {
@@ -204,51 +205,52 @@ button {
     background-position: center;
     border: none;
     border-radius: 5px;
+    margin-left: 20px;
+    
 }
 
 .popup-menu__list {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;    
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 0;
+   padding: 0;
+   justify-content: center;    
 }
 
 .popup-menu__item {
     display: flex;
     min-height: 89px;
+    max-width: 800px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .popup-menu__link {
     display: flex;
     align-items: center;
-    padding: 0 30px;
-    padding-top: 39px;
-    padding-bottom: 26px;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
     font-family: Open Sans;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #E0E0E0;
+    text-transform: uppercase;    
 }
 
 .popup-menu__link:hover {
     background-color: #FF3F40;
-    ;
-}
+   }
 
 .popup-menu__link_active {
     background-color: #FF3F40;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
     .popup-menu {
         display: none;
     }
@@ -295,22 +297,19 @@ button {
 
 @media screen and (max-width: 700px) {
     .intro__heading {
-        font-size: 40px;
-        
+        font-size: 40px;        
     }
 }
 
 @media screen and (max-width: 560px) {
     .intro__heading {
-        font-size: 30px;
-        
+        font-size: 30px;        
     }
 }
 
 @media screen and (max-width: 560px) {
     .intro__heading {
-        font-size: 20px;
-        
+        font-size: 20px;        
     }
 }
 
